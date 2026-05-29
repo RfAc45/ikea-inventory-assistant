@@ -383,7 +383,7 @@
     const typing = addTyping();
 
     try {
-      const res = await fetch('{{ route("chat.send") }}', {
+      const res = await fetch('/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
